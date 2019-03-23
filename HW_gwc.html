@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+        <head>
+
+                // below is javascript
+
+                <script type="text/javascript">
+
+                // variable declaration. Notice that you don't need to specify the variable type
+
+                var number = 1;
+
+                // declare a function called update. This function takes no input parameters
+
+                function update_off(){
+				
+				// Create a button for turn on and turn off
+					
+				
+				// the following two lines can resize an image
+						document.getElementById('img').style.height='200px';
+
+                        document.getElementById('img').style.width='200px';
+
+                // make number switch between 1 and -1
+
+                        number = number * -1;
+
+                        if (number == -1)
+						{
+
+                                document.getElementById('img').src='https://images.homedepot-static.com/productImages/763b0433-97f4-4e21-aa95-64c04282a43b/svn/smart-electric-led-bulbs-826-64_1000.jpg';
+
+                        }
+
+                        if (number == 1)
+						{
+
+                                document.getElementById('img').src='https://images.homedepot-static.com/productImages/763b0433-97f4-4e21-aa95-64c04282a43b/svn/smart-electric-led-bulbs-826-64_1000.jpg';
+
+                        }
+
+                }
+				function update_on(){			
+				
+				// the following two lines can resize an image
+						document.getElementById('img').style.height='200px';
+
+                        document.getElementById('img').style.width='200px';
+
+                // make number switch between 1 and -1
+
+                        number = number * -1;
+
+                        if (number == -1)
+						{
+
+                                document.getElementById('img').src='https://previews.123rf.com/images/tr3gi/tr3gi1101/tr3gi110100029/8746356-idea-and-solution-glowing-lightbulb-isolated-on-white-background-photo-of-ordinary-switched-on-light.jpg';
+
+                        } 
+						
+                        if (number == 1)
+						{
+
+                                document.getElementById('img').src='https://previews.123rf.com/images/tr3gi/tr3gi1101/tr3gi110100029/8746356-idea-and-solution-glowing-lightbulb-isolated-on-white-background-photo-of-ordinary-switched-on-light.jpg';
+
+                        }
+
+                }
+
+                </script>
+
+        </head>
+
+        <body>
+
+        // onclick specifies the function to call when the image is called
+
+                <img id='img' src='https://images.homedepot-static.com/productImages/763b0433-97f4-4e21-aa95-64c04282a43b/svn/smart-electric-led-bulbs-826-64_1000.jpg' style= "width:200px;height:200px;" onclick="update()">
+				<button onclick="update_on()">On</button>
+				<button onclick="update_off()">Off</button>
+        </body>
+
+</html>
+		
